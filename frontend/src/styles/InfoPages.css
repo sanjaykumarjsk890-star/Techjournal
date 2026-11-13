@@ -1,0 +1,157 @@
+.info-page {
+  width: min(100% - 48px, 1120px);
+  min-height: 60vh;
+  margin: 0 auto;
+  padding: 64px 0 80px;
+}
+
+.info-page-header {
+  max-width: 780px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.info-page-eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: var(--primary);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.info-page-header h1 {
+  margin-bottom: 16px;
+  color: var(--text-main);
+  font-family: var(--font-display);
+  font-size: clamp(2.7rem, 6vw, 4.8rem);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.info-page-header p,
+.about-story p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.help-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  padding-top: 32px;
+}
+
+.help-option {
+  min-width: 0;
+  padding: 24px 0;
+  border-top: 2px solid var(--primary);
+}
+
+.help-option > svg {
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.help-option h2,
+.about-story h2,
+.about-focus h2 {
+  margin-bottom: 10px;
+  color: var(--text-main);
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+.help-option p {
+  min-height: 76px;
+  margin-bottom: 18px;
+  color: var(--text-muted);
+  font-size: 0.94rem;
+  line-height: 1.65;
+}
+
+.info-page-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.info-page-link:hover {
+  color: var(--primary-hover);
+}
+
+.info-page-bottom-link {
+  margin-top: 24px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border-light);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(240px, 0.75fr);
+  gap: clamp(36px, 8vw, 96px);
+  padding-top: 38px;
+}
+
+.about-story h2 {
+  font-size: 2rem;
+}
+
+.about-story p {
+  margin-bottom: 18px;
+}
+
+.about-story .info-page-link {
+  margin-top: 6px;
+}
+
+.about-focus {
+  padding: 24px;
+  background: var(--bg-secondary);
+}
+
+.about-focus ul {
+  display: grid;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.about-focus li {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text-body);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 720px) {
+  .info-page {
+    width: min(100% - 36px, 560px);
+    padding: 42px 0 56px;
+  }
+
+  .help-options {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .help-option {
+    padding: 20px 0;
+  }
+
+  .help-option p {
+    min-height: auto;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}

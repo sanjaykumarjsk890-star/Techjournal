@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+
+**/node_modules/
+**/dist/
+**/dist-ssr/
+
+backend/uploads/
+
+*.log
+.DS_Store
+.vscode/
