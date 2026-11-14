@@ -7,75 +7,75 @@ const User = require("./models/User");
 
 const ARTICLE_AUTHORS = {
   "introduction-to-artificial-intelligence": {
-    name: "Aarav Iyer",
+    name: "Kavin Kumar",
     email: "aarav.iyer@authors.techjournal.example",
   },
   "building-resilient-microservices-event-driven-architecture": {
-    name: "Meera Nair",
+    name: "Chandru K",
     email: "meera.nair@authors.techjournal.example",
   },
   "understanding-large-language-models-transformers-inference": {
-    name: "Kavya Raman",
+    name: "Ramachandran H",
     email: "kavya.raman@authors.techjournal.example",
   },
   "zero-trust-security-architecture-cloud-native": {
-    name: "Divya Menon",
+    name: "Punitha R",
     email: "divya.menon@authors.techjournal.example",
   },
   "optimizing-web-performance-modern-css-core-web-vitals": {
-    name: "Karthik Rao",
+    name: "Merlin P",
     email: "karthik.rao@authors.techjournal.example",
   },
   "serverless-kubernetes-scaling-workloads-cloud": {
-    name: "Rohan Krishnan",
+    name: "Gunanithi G",
     email: "rohan.krishnan@authors.techjournal.example",
   },
   "engineering-culture-driver-software-quality": {
-    name: "Ananya Pillai",
+    name: "Sanjay A",
     email: "ananya.pillai@authors.techjournal.example",
   },
   "quantum-computing-preparing-post-rsa-cryptography": {
-    name: "Vikram Narayanan",
+    name: "Sabeetha R",
     email: "vikram.narayanan@authors.techjournal.example",
   },
   "practical-api-versioning-without-breaking-clients": {
-    name: "Priya Srinivasan",
+    name: "Rabin T",
     email: "priya.srinivasan@authors.techjournal.example",
   },
   "database-indexes-measured-approach-faster-queries": {
-    name: "Arjun Thomas",
+    name: "Anbu M",
     email: "arjun.thomas@authors.techjournal.example",
   },
   "evaluating-retrieval-augmented-generation-systems": {
-    name: "Nisha Subramanian",
+    name: "Aathi U",
     email: "nisha.subramanian@authors.techjournal.example",
   },
   "observability-distributed-applications-opentelemetry": {
-    name: "Dev Rajan",
+    name: "Kannagavalli R",
     email: "dev.rajan@authors.techjournal.example",
   },
   "cloud-cost-optimization-without-sacrificing-reliability": {
-    name: "Tara Mukherjee",
+    name: "Latha C",
     email: "tara.mukherjee@authors.techjournal.example",
   },
   "accessible-web-forms-small-details-big-difference": {
-    name: "Neha Kapoor",
+    name: "PriyaRam J",
     email: "neha.kapoor@authors.techjournal.example",
   },
   "safer-continuous-delivery-small-reversible-releases": {
-    name: "Siddharth Menon",
+    name: "Karpagam F",
     email: "siddharth.menon@authors.techjournal.example",
   },
   "designing-offline-first-mobile-app-experiences": {
-    name: "Ishita Das",
+    name: "Saraarjun k",
     email: "ishita.das@authors.techjournal.example",
   },
   "privacy-by-design-collect-less-protect-more": {
-    name: "Ritu Varma",
+    name: "Farthima V",
     email: "ritu.varma@authors.techjournal.example",
   },
   "caching-strategies-faster-responses-without-stale-surprises": {
-    name: "Sanjana Krishnan",
+    name: "Yureka P",
     email: "sanjana.krishnan@authors.techjournal.example",
   },
   "comparative-analysis-rust-vs-go-apis-draft": {

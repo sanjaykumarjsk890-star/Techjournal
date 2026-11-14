@@ -361,7 +361,8 @@ Keep a small, representative test set and run it whenever you change chunking, r
 Documents should be treated as content, not instructions to the application. Keep system behavior under trusted application control, and enforce document permissions in the retrieval layer so a response can't expose material the user isn't allowed to read.
 
 There isn't one metric that settles whether RAG is “good.” A combination of retrieval checks, answer review, and real user feedback gives a much more honest picture.`,
-    coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&auto=format&fit=crop&q=80",
+    coverImage: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&auto=format&fit=crop&q=80",
+    refreshCoverImage: true,
     tags: ["ai", "rag", "evaluation", "llm"],
     featured: true,
     status: "published",
@@ -670,16 +671,19 @@ const seedBlogs = async () => {
         console.log(`+ Seeded article [${article.status.toUpperCase()}]: ${article.title}`);
         seededCount++;
       } else {
+        const updates = {
+          description: article.description,
+          content: article.content,
+          readingTime,
+          "seo.description": article.description,
+        };
+        if (article.refreshCoverImage) {
+          updates.coverImage = article.coverImage;
+        }
+
         await Blog.updateOne(
           { _id: existingBlog._id },
-          {
-            $set: {
-              description: article.description,
-              content: article.content,
-              readingTime,
-              "seo.description": article.description,
-            },
-          }
+          { $set: updates }
         );
         console.log(`~ Refreshed article copy: ${article.title}`);
         updatedCount++;
