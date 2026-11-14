@@ -116,7 +116,8 @@ At inference time, a model generates output one token at a time. The weights and
 For a real application, compare response time, throughput, cost, and answer quality on the prompts your users actually send. A smaller model may be the better choice if it meets the task's needs. Running inference locally can also keep some data on-device, though it brings its own hardware and update constraints.
 
 The useful question isn't simply how big a model is. It's whether the model and serving setup are a good fit for the job.`,
-    coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&auto=format&fit=crop&q=80",
+    coverImage: "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?w=1200&auto=format&fit=crop&q=80",
+    refreshCoverImage: true,
     tags: ["ai", "machine-learning", "transformers", "llm", "deeplearning"],
     featured: true,
     status: "published",
@@ -305,7 +306,8 @@ Before removing an old path, find out who still uses it. Usage logs may not iden
 An API schema and contract tests can catch an unexpected response change before it reaches production. After release, watch request patterns and error reports to see whether clients are having trouble.
 
 Versioning can't remove the coordination work between teams. It can make that work predictable, which is often the difference between a routine upgrade and a surprise outage.`,
-    coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&auto=format&fit=crop&q=80",
+    coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&auto=format&fit=crop&q=80",
+    refreshCoverImage: true,
     tags: ["api", "backend", "versioning", "software-design"],
     featured: false,
     status: "published",
@@ -416,7 +418,8 @@ Non-production environments can often be scheduled to stop outside working hours
 Don't cut redundancy or capacity based on a single quiet week. Consider peak demand, recovery needs, and how the service behaves when one component fails. Service-level objectives make the trade-off clearer: a lower bill that causes regular outages isn't a successful optimization.
 
 Roll out larger changes gradually, watch cost and reliability together, and agree on a rollback signal in advance. Cost reviews work best as a normal part of engineering—not an annual scramble after the bill arrives.`,
-    coverImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&auto=format&fit=crop&q=80",
+    coverImage: "https://images.unsplash.com/photo-1535378620166-273708d44e4c?w=1200&auto=format&fit=crop&q=80",
+    refreshCoverImage: true,
     tags: ["cloud", "finops", "cost-optimization", "reliability"],
     featured: false,
     status: "published",
@@ -548,7 +551,8 @@ For data that changes often, use a stable cache key and a clear invalidation eve
 Track hit rate, age, and invalidation failures alongside response time. Test cold-cache behavior and make sure the source system can handle a cache outage without being overwhelmed. If people depend on timely updates, test the delay they actually see.
 
 A cache should make a healthy system more responsive. It shouldn't become the only place important information exists or an unexplained source of surprises.`,
-    coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&auto=format&fit=crop&q=80",
+    coverImage: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=1200&auto=format&fit=crop&q=80",
+    refreshCoverImage: true,
     tags: ["caching", "performance", "webdev", "architecture"],
     featured: false,
     status: "published",
