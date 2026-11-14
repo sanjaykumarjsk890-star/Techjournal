@@ -38,6 +38,8 @@ TechJournal is a responsive technology blog with public article browsing and a p
    npm --prefix backend run seed:all
    ```
 
+   Running the blog seeder also refreshes the sample articles' descriptions and content for matching slugs.
+
    Assign a distinct sample author to every article:
 
    ```powershell
